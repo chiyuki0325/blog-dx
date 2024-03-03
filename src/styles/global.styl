@@ -1,0 +1,29 @@
+@require('./theme.styl')
+@require('./const.styl')
+
+
+@require('./func.styl')
+@require('./layout.styl')
+@require('./common/*.styl')
+
+// 可以动态变化的属性
+:root
+  --width-left: 288px
+  --width-main: 720px
+  --gap-l: 16px
+  --gap-p: .75rem // gap for paragraph
+  // desktop 2k or larger
+  @media screen and (min-width: $device-2k)
+    --gap-l: 32px
+    --width-left: 352px
+    --width-main: 780px
+  // desktop 4k or larger
+  @media screen and (min-width: $device-4k)
+    --width-main: 860px
+    --gap-l: 64px
+  // iPad 竖屏
+  @media screen and (max-width: $device-tablet)
+    --width-left: 252px
+  // iPad 竖屏
+  @media screen and (max-width: $device-mobile-max)
+    --width-left: 288px

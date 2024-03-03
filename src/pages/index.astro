@@ -1,0 +1,30 @@
+---
+import {
+    SITE_TITLE,
+    SITE_DESCRIPTION,
+} from "../consts"
+
+import BaseHead from "../components/head/BaseHead.astro"
+import CommonHeader from "../components/sidebar/CommonHeader.astro"
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body style="height: 100%">
+    <div id="start" class="l_body">
+      <aside class="l_left">
+        <CommonHeader />
+      </aside>
+      <div class="l_main">
+    </div>
+    </div>
+  </body>
+</html>
+
+
+<style lang="stylus" is:global>
+@require("../styles/layout/sidebar.styl")
+</style>
