@@ -1,6 +1,3 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
 export const THEME_VERSION = '0.0.1'
 
 export const SITE_TITLE = '千雪的咖啡厅'
